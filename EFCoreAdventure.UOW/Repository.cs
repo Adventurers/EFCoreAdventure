@@ -5,7 +5,6 @@ namespace EFCoreAdventure.UOW
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
     {
-       
         public IReadRepository<TEntity> Query { get; set ; }
         public IWriteRepository<TEntity> Write { get; set; }
 
