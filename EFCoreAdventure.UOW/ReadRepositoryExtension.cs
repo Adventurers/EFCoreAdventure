@@ -23,15 +23,17 @@ namespace EFCoreAdventure.UOW
         {
             var query = repository.Query(tracking);
 
-            if (predicate != null)
-            {
-                query = query.Where(predicate);
-            }
 
             if (include != null)
             {
                 query = include(query);
             }
+
+            if (predicate != null)
+            {
+                query = query.Where(predicate);
+            }
+
 
             PageList<TResult> result;
             if (orderBy != null)
