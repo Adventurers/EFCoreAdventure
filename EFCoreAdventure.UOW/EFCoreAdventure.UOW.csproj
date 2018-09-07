@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EFCoreAdventure.Models\EFCoreAdventure.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Adventurers.Design">
+      <HintPath>..\..\Adventurers\Adventurers.Design\bin\Debug\netcoreapp2.1\Adventurers.Design.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

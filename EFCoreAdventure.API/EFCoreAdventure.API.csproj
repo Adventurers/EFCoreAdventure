@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EFCoreAdventure.Mapping\EFCoreAdventure.Mapping.csproj" />
+    <ProjectReference Include="..\EFCoreAdventure.Models\EFCoreAdventure.Models.csproj" />
+    <ProjectReference Include="..\EFCoreAdventure.UOW\EFCoreAdventure.UOW.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Adventurers.Design">
+      <HintPath>..\..\Adventurers\Adventurers.Design\bin\Debug\netcoreapp2.1\Adventurers.Design.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
